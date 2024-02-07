@@ -89,7 +89,7 @@ public class ClientGUI extends JFrame {
         tfPort = new JTextField("8189");
         tfLogin = new JTextField("Semen Petrovich");
         password = new JPasswordField("12345678");
-        btnLogin = new JButton("login");
+        btnLogin = new JButton("Войти");
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -124,7 +124,7 @@ public class ClientGUI extends JFrame {
                 }
             }
         });
-        btnSend = new JButton("send");
+        btnSend = new JButton("Отправить");
         btnSend.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -104,8 +104,8 @@ public class ServerWindow extends JFrame {
 
     private Component createButtons() {
         JPanel panel = new JPanel(new GridLayout(1, 2));
-        btnStart = new JButton("Start");
-        btnStop = new JButton("Stop");
+        btnStart = new JButton("Запустить сервер");
+        btnStop = new JButton("Остановить сервер");
 
         btnStart.addActionListener(new ActionListener() {
             @Override
@@ -114,7 +114,7 @@ public class ServerWindow extends JFrame {
                     appendLog("Сервер уже был запущен");
                 } else {
                     work = true;
-                    appendLog("Сервер запущен!");
+                    appendLog("Успешный запуск сервера!");
                 }
             }
         });
@@ -129,7 +129,7 @@ public class ServerWindow extends JFrame {
                     while (!clientGUIList.isEmpty()){
                         disconnectUser(clientGUIList.get(clientGUIList.size()-1));
                     }
-                    appendLog("Сервер остановлен!");
+                    appendLog("Успешная остановка сервера!");
                 }
             }
         });
